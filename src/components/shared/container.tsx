@@ -1,8 +1,8 @@
-import { cn } from "@/lib/utils";
-import { FC, PropsWithChildren } from "react";
+import { cn } from '@/lib/utils'
+import { FC, PropsWithChildren } from 'react'
 
 interface IContainer {
-  className?: string;
+  className?: string
 }
 
 export const Container: FC<PropsWithChildren<IContainer>> = ({
@@ -10,6 +10,6 @@ export const Container: FC<PropsWithChildren<IContainer>> = ({
   children,
 }) => {
   return (
-    <div className={cn("mx-auto max-w-[1280px]", className)}>{children}</div>
-  );
-};
+    <div className={cn('mx-auto max-w-[1280px]', className)}>{children}</div>
+  )
+}
